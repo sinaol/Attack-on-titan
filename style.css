@@ -1,0 +1,320 @@
+    body {
+        margin: 0;
+        background-color: #f5f3f4;
+    }
+    /*...header...*/
+    /*navigation bar*/
+    
+    nav {
+        height: 50px;
+        background-color: #d86d26;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    #sidebar-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(163, 16, 16);
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+    
+    #sidebar-btn:hover {
+        width: 31px;
+        height: 31px;
+        box-shadow: 2px 2px 2px rgb(131, 34, 34);
+        font-size: 20px;
+    }
+    
+    logo h3 {
+        position: absolute;
+        left: 60px;
+        top: 12px;
+        color: gold;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    @media screen and (max-width: 720px) {
+        logo h3 {
+            display: none;
+        }
+    }
+    
+    .allNavButtons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navButtons {
+        font-size: 20px;
+        font-family: fantasy;
+        padding: 0 5px;
+        transition: 0.2s;
+    }
+    
+    .navButtons:hover {
+        padding: 0 8px;
+        color: rgb(148, 38, 38);
+    }
+    /*background image*/
+    
+    #backgroundImage {
+        height: 650px;
+        background-image: url("https://wallpapercave.com/wp/wp1837545.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+    /*shinzo*/
+    
+    .shinzo {
+        height: 80px;
+        background-color: rgb(143, 58, 12);
+        color: rgb(220, 125, 23);
+        text-align: center;
+    }
+    
+    .shinzo h2 {
+        font-size: 60px;
+        font-weight: 500;
+    }
+    
+    @media screen and (max-width: 1180px) {
+        #backgroundImage {
+            height: 500px;
+        }
+    }
+    
+    @media screen and (max-width: 910px) {
+        #backgroundImage {
+            height: 350px;
+        }
+        .shinzo {
+            height: 65px;
+        }
+        .shinzo h2 {
+            font-size: 45px;
+        }
+    }
+    
+    @media screen and (max-width: 640px) {
+        #backgroundImage {
+            height: 250px;
+        }
+        .shinzo {
+            height: 60px;
+        }
+        .shinzo h2 {
+            font-size: 40px;
+        }
+    }
+    /*...sidebar...*/
+    
+    #sidebar {
+        border: solid 1px #000;
+        background-color: rgb(255, 207, 117);
+        position: fixed;
+        top: 50px;
+        left: -220px;
+        padding: 20px;
+        width: 200px;
+        height: 1000px;
+        z-index: 10;
+    }
+    
+    @keyframes comeIn {
+        from {
+            left: -220px;
+        }
+        to {
+            left: 0px;
+        }
+    }
+    
+    @keyframes goOut {
+        from {
+            left: 0px;
+        }
+        to {
+            left: -220px;
+        }
+    }
+    
+    .aot {
+        position: relative;
+        left: 40px;
+        padding-bottom: 20px;
+        color: rgb(102, 66, 0);
+    }
+    
+    .sidebar-ul {
+        border-bottom: solid 1px rgb(163, 117, 0);
+        padding-bottom: 20px;
+    }
+    
+    .sidebar-li {
+        color: rgb(201, 131, 0);
+        list-style-type: none;
+        transition: 0.1s;
+    }
+    
+    .sidebar-li:hover {
+        color: rgb(151, 98, 0);
+    }
+    
+    .sidebar-h5 {
+        color: rgb(155, 101, 0);
+        ;
+    }
+    /*...article...*/
+    
+    .div-onpage-links {
+        border: solid 1px;
+        width: 300px;
+        height: 150px;
+        background-color: #dadada;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .onpage-links {
+        position: relative;
+        left: 10px;
+        color: rgb(182, 63, 65);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .onpage-links:hover {
+        color: rgb(255, 0, 0);
+    }
+    
+    article {
+        margin: 100px 50px;
+    }
+    
+    p {
+        font-size: 23px;
+    }
+    
+    .img1 {
+        width: 500px;
+        float: right;
+    }
+    
+    .div-img2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img2 {
+        width: 90%;
+        margin: 30px 0 80px 0;
+    }
+    
+    .clear {
+        clear: right;
+    }
+    
+    h2 {
+        text-decoration: underline;
+    }
+    
+    .games li {
+        font-size: 23px;
+    }
+    
+    @media screen and (max-width:1000px) {
+        article {
+            margin: 100px 25px;
+        }
+    }
+    
+    @media screen and (max-width:800px) {
+        .img1 {
+            width: 300px;
+        }
+    }
+    /*go up button*/
+    
+    .goUp-btn-div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(162, 90, 13);
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+        z-index: 10;
+    }
+    
+    .goUp-btn-p {
+        position: relative;
+        left: 13px;
+        bottom: 3px;
+        font-size: 30px;
+        color: rgb(255, 146, 29);
+        transition: 0.2s;
+    }
+    
+    .goUp-btn-div:hover .goUp-btn-p {
+        bottom: 7px;
+    }
+    /*...footer...*/
+    
+    footer {
+        height: 250px;
+        background-color: rgb(177, 172, 22);
+    }
+    
+    .footer-details {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 50px;
+    }
+    
+    .fa {
+        background-color: rgb(121, 117, 16);
+        color: rgb(196, 190, 30);
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        text-align: center;
+        transition: 0.2s;
+    }
+    
+    .fa:hover {
+        color: rgb(240, 233, 30);
+    }
+    
+    .footers-footer {
+        height: 50px;
+        width: 100%;
+        position: relative;
+        top: 80px;
+        background-color: rgb(151, 147, 19);
+        color: rgb(79, 76, 10);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
